@@ -32,3 +32,29 @@ let totalSum = arr1.reduce((sum,num)=>{
   return sum+num;
 });
 console.log(totalSum);
+
+//10
+for (let index = 0; index < array2.length; index++) {
+  const element = array2[index];
+  console.log(element);
+}
+//11
+array2.forEach((data)=>{
+  console.log(data);
+})
+
+//12,13
+let array_2d = [];
+let row = 3;
+let col = 3;
+let element = 0;
+for (let i = 0; i < 3; i++) {
+  array_2d[i] = [];
+  for (let j = 0; j < 3; j++) {
+    array_2d[i][j] = element++;
+  }
+}
+console.log(array_2d);
+console.log(array_2d[2][1]);
+console.log(array_2d[0][2]);
+console.log(array_2d[1][1]);
