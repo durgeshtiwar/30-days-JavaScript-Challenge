@@ -34,3 +34,32 @@ const sum = (...data) =>
 }
 const result = sum(1,2,3,4,5);
 console.log(result);
+
+//7
+const parameterFunction = (num1, num2 = 1) =>
+{
+  return num1*num2;
+}
+console.log(parameterFunction(5));
+
+//8
+var name = "Durgesh Tiwari";
+var age = 21;
+var course = "B.Tech";
+
+let intro = () =>
+{
+  console.log(`Woof Woof!!, I am ${this.name}, I'm ${this.age} years old and I have completed my ${this.course} in CSE.`);
+}
+let person = {name,age,course,intro};
+person.intro();
+console.log(person);
+//9
+let LASTNAME = "lastName";
+let fullName = {
+  firstName : "Durgesh",
+  [LASTNAME] : "Tiwari"
+};
+console.log(fullName);
+console.log(`First Name is = ${fullName.firstName} 
+Last Name is = ${fullName.lastName}`);
