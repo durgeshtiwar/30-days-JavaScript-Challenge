@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Temperature from './components/Temperature'
+import SearchFunction from './components/SearchFunction';
 
 function App() {  
     const [data, setData] = useState();
+    const handleOnClick = (e) =>{
+      console.log(e);
+    }
     const findWeather = async() =>{
     try {
       const responce = await fetch("https://api.weatherapi.com/v1/current.json?key=b16ce6c940c14817a26113929242309&q=surat")
@@ -17,10 +21,11 @@ function App() {
       findWeather();
     },[]);
     return (
-      <>
+      <center>
       <h1 className='text-center text-3xl font-bold'>Weather App
       </h1>
+      <SearchFunction handleOnClick = {handleOnClick} />
       <Temperature data = {data}/>
-      </>
+      </center>
   )}
 export default App
