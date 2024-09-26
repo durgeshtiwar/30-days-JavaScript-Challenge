@@ -1,11 +1,13 @@
 import React from 'react'
 
-function SearchFunction({handleOnClick}) {
+function SearchFunction({handleOnchange,handleOnClick}) {
   return (
     <div className='p-2'>
         <h1 className='font-bold'>Search Your City.....</h1>
         <div>
-            <input className='rounded-md' type="text" />
+            <input className='rounded-md' type="text"
+            onChange={handleOnchange}
+            />
             <button
             className='bg-blue-800 rounded-md m-2 font-semibold'
             onClick={handleOnClick}>
