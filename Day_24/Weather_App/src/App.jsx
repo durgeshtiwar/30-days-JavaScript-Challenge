@@ -25,7 +25,7 @@ function App() {
     }}
     useEffect(()=>{
       findWeather();
-    },[cityName]);
+    },["",cityName]);
     return (
       <center>
       <h1 className='text-center text-3xl font-bold'>Weather App
@@ -35,7 +35,7 @@ function App() {
       handleOnchange = {handleOnchange}
       />
       <Temperature data = {data}/>
-      <DayForecaste data = {data} />
+      {/* <DayForecaste data = {data} /> */}
       </center>
   )}
 export default App
