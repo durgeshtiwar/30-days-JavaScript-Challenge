@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import MovieData from './components/MovieData';
+import Header from './components/Header';
 
 function App() {
   const [data, setData] = useState('');
@@ -13,12 +14,10 @@ function App() {
     fetchData();
   },[]);
   return (
-    <>
-    <h1 className="text-3xl font-bold underline">
-      Movie Search App
-    </h1>
+    <div >
+    <Header/>
     <MovieData data={data} />
-    </>
+    </div>
   )
 }
 export default App
