@@ -14,9 +14,13 @@ function App() {
     fetchData();
   },[]);
   return (
-    <div >
+    <div>
+    <div>
     <Header/>
+    </div>
+    <div className='p-4'>
     <MovieData data={data} />
+    </div>
     </div>
   )
 }
