@@ -8,3 +8,7 @@
   text-align: center;
   font-weight: bold;
 }
+.box-contain{
+display: flex;
+flex-wrap: wrap;
+}
