@@ -9,8 +9,13 @@
 //   number++;
 // }
 
-let btn = document.createElement("button");
-btn.innerHTML = "Click me";
-let addbtn = document.querySelector("body").prepend(btn);
-btn.style.backgroundColor = "red";
-btn.style.color = "white";
+// let btn = document.createElement("button");
+// btn.innerHTML = "Click me";
+// let addbtn = document.querySelector("body").prepend(btn);
+// btn.style.backgroundColor = "red";
+// btn.style.color = "white";
+
+let para = document.createElement("p");
+para.innerText = "My Name is Durgesh Tiwari";
+document.querySelector("body").prepend(para);
+para.classList.add("new_class");
