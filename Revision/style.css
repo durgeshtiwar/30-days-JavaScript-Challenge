@@ -13,7 +13,11 @@ display: flex;
 flex-wrap: wrap;
 } */
 
-.new_class{
+/* .new_class{
   background-color: green;
   color: white;
+} */
+
+.toggle-btn{
+  cursor: pointer;
 }
