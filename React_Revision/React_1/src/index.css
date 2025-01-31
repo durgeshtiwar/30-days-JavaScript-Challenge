@@ -1,14 +1,29 @@
-#img{
-  width: 130px;
-  height: 200px;
-  border-radius: 10px;
-}
-.card{
-  background-color: darkgrey;
+.count{
+  display: flex;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: large;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.inc{
+  cursor: pointer;
+  background-color: green;
+  color: white;
   font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 10px;
+  margin-top: 0;
+}
+.dec{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 10px;
+  margin-top: 0;
 }

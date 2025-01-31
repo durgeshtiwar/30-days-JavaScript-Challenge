@@ -1,7 +1,6 @@
 .container{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-background-color: rgb(220, 245, 213);
+width: 200px;
+height: 130px;
+background-color: white;
+border-radius: 10px;
 }
