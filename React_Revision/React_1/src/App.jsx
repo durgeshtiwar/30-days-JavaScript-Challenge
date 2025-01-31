@@ -1,11 +1,20 @@
 import './App.css'
 import UserCard from './components/UserCard'
+import images from './assets/image.jpg'
 
 function App() {
   return (
-    <div>
-      <h1>Ram Ram Bhai Sareaane</h1>
-      <UserCard/>
+    <div className='container'>
+      <UserCard name="Durgseh Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
+      <UserCard name="Shubham Tiwari" img={images}/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 
-function UserCard() {
+function UserCard(props) {
   return (
-    <div>
-      <p className='title'>Ram Ram Bhai</p>
-      <img src="" alt="" />
+    <div className='card'>
+      <p className='title'>{props.name}</p>
+      <img id='img' src={props.img} alt="Durgesh Ki Image" />
       <p>Discription of This Page</p>
     </div>
   )
