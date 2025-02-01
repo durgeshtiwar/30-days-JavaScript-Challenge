@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 
-function Counter() {
-  const[count, setCount] = useState(0);
+function Counter(props) {
   return (
     <div className='count'>
-      <h3>You Have Clicked {count} Times</h3>
-      <button className='inc' onClick={()=>setCount(count+1)}>INC +</button>
-      <button className='dec' onClick={()=>setCount(count-1)}>DEC -</button> 
+      {props.children}
+      <button className='inc' onClick={props.handleClick}>INC +</button>
+      {/* <button className='dec' onClick={props.handleClick}>DEC -</button>  */}
     </div>
   )
 }
